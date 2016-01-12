@@ -7,9 +7,8 @@ from flask.ext.script import Manager, Server
 from tumblelog import app
 
 manager = Manager(app)
-manager = Manager(app)
 
-# Turn on debugger by default and reloader
+# Turn on debugger by default and reload
 manager.add_command("runserver", Server(
     use_debugger=True,
     use_reloader=True,
